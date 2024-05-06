@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестирование по уроку 1</title>
+  <link rel="stylesheet" href="styleProgramm.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="home-link">На Главную</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    
+    <section>
+      
+      <style> .question { margin-bottom: 20px; } .answer { margin-bottom: 10px; } .submit-button { margin-top: 20px; } </style> 
+      </head> <body> <h1>Тестирование по уроку №1</h1> <div class="question"> 
+        <h3>Когда началось современное развитие органического сельского хозяйства?</h3> <div class="answer"> 
+          <input type="radio" name="q1" value="a"> a) В 19 веке </div> 
+          <div class="answer"> <input type="radio" name="q1" value="b"> b) В 20 веке * </div> 
+          <div class="answer"> <input type="radio" name="q1" value="c"> c) В 21 веке </div> 
+          </div> <div class="question"> 
+            <h3>Кто считается отцом современного органического сельского хозяйства?</h3> 
+          <div class="answer"> <input type="radio" name="q2" value="a"> a) Родейл </div> 
+          <div class="answer"> <input type="radio" name="q2" value="b"> b) Сэр Альберт Говард * </div> 
+          <div class="answer"> <input type="radio" name="q2" value="c"> c) Эксперт по органическому сельскому хозяйству </div> 
+          </div> <div class="question"> <h3>В какие годы в США начался активный период развития органического сельского хозяйства?</h3> 
+          <div class="answer"> <input type="radio" name="q3" value="a"> a) 1950-60-е годы </div> 
+          <div class="answer"> <input type="radio" name="q3" value="b"> b) 1960-70-е годы </div> 
+          <div class="answer"> <input type="radio" name="q3" value="c"> c) 1970-80-е годы * </div> 
+        </div> 
+          <div class="submit-button"> <button onclick="checkAnswers()">Пройти тестирование</button> 
+          </div> 
+          <script> function checkAnswers() { var q1Answer = document.querySelector('input[name="q1"]:checked'); 
+          var q2Answer = document.querySelector('input[name="q2"]:checked'); 
+          var q3Answer = document.querySelector('input[name="q3"]:checked'); 
+          if (q1Answer && q1Answer.value === 'b' && q2Answer && q2Answer.value === 'b' && q3Answer && q3Answer.value === 'c') { 
+
+            alert("Все верно! Переходим к уроку №2");
+            window.location.href = 'lesson-2.html'; } else { 
+
+            alert("Это неверно. Попробуйте еще раз! Подсказка: слудуйте за звездами");
+            var submitButton = document.querySelector('.submit-button'); 
+
+            document.querySelectorAll('input[type="radio"]').forEach(function(radio) { radio.checked = false; }); } } function resetTest() { 
+
+              var submitButton = document.querySelector('.submit-button'); 
+              submitButton.innerHTML = '<button onclick="checkAnswers()">Пройти тестирование</button>'; } 
+              </script> 
+              
+</head>
+
+</body>
+</html>
