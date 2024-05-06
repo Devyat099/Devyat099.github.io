@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестирование по уроку 1</title>
+  <link rel="stylesheet" href="styleProgramm.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="home-link">На Главную</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    
+    <section>
+      
+
+      <style> .question { margin-bottom: 20px; } .answer { margin-bottom: 10px; } .submit-button { margin-top: 20px; } </style> 
+    </head> <body> <h1>Тестирование по уроку №2</h1> <div class="question"> 
+      <h3>Что можно отнести к ПЛЮСАМ органического сельского хозяйства?</h3> <div class="answer"> 
+        <input type="radio" name="q1" value="a"> a) Увеличение иммунитета растений *</div> 
+        <div class="answer"> <input type="radio" name="q1" value="b"> b) Высокая производительность </div> 
+        <div class="answer"> <input type="radio" name="q1" value="c"> c) Увеличение урожая </div> 
+        </div> <div class="question"> 
+          <h3>Что можно отнести к МИНУСАМ традиционного сельского хозяйства?</h3> 
+        <div class="answer"> <input type="radio" name="q2" value="a"> a) Сложность сертификации </div> 
+        <div class="answer"> <input type="radio" name="q2" value="b"> b) Высокие затраты на исследования и внедрение новшеств  </div> 
+        <div class="answer"> <input type="radio" name="q2" value="c"> c) Негативное воздействие на окружающую среду * </div> 
+        </div> <div class="question"> <h3>Какой вид ведения сельского хозяйства оказывает негативное влияние на окружающую среду?</h3> 
+        <div class="answer"> <input type="radio" name="q3" value="a"> a) Традиционное сельское хозяйство * </div> 
+        <div class="answer"> <input type="radio" name="q3" value="b"> b) Органическое сельское хозяйство </div> 
+      </div> 
+        <div class="submit-button"> <button onclick="checkAnswers()">Проверить ответы</button> 
+        </div> 
+
+
+
+      <script>
+        function checkAnswers() {
+          var q1Answer = document.querySelector('input[name="q1"]:checked');
+          var q2Answer = document.querySelector('input[name="q2"]:checked');
+          var q3Answer = document.querySelector('input[name="q3"]:checked');
+    
+          if (q1Answer && q1Answer.value === 'a' &&
+              q2Answer && q2Answer.value === 'c' &&
+              q3Answer && q3Answer.value === 'a') {
+
+            alert("Все верно! Переходим к уроку №3");
+            window.location.href = 'lesson-3.html';
+          } else {
+            
+            var submitButton = document.querySelector('.submit-button');
+
+            alert("Это неверно. Попробуйте еще раз! Подсказка: слудуйте за звездами");
+    
+
+            document.querySelectorAll('input[type="radio"]').forEach(function(radio) {
+              radio.checked = false;
+            });
+          }
+        }
+    
+      </script>
+              
+</head>
+
+</body>
+</html>

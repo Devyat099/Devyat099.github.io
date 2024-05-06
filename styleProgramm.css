@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #99b0f0;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .learning-content,
+  .quiz-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #23527c;
+  }
+
+  h1, h2 {
+    color: rgb(131, 46, 46);
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+
+  #next-button {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+}
+#next-button button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#countdown {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b9f3cf;
+  margin: 0;
+  padding: 0;
+
+  margin: 0;
+  padding: 0;
+  background-image: url("123.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.learning-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #333333;
+  text-align: center;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.interesting-facts {
+  font-style: italic;
+  margin-top: 20px;
+}
+.quote {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+header {
+  background-color: #99b0f0;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  box-shadow: 0 0 10px rgb(240, 224, 224);
+  background-color: #ffffff;
+  max-width: 800px;
+  min-width: 800px;
+  
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-link:hover {
+  /* background-color: #45a049;  */
+  font-size: 18px;
+}
